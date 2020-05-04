@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang = "fr"> <!-- Langue de la page web pour le navigateur. -->
+<head>
+	<!-- Encodage de la page web -->
+	<meta charset = "utf-8">
+	<!-- Description de la page web pour le navigateur. -->
+	<meta name = "description" content = "Simple jeu de Bataille Navale remanié en bataille spatiale dans le cadre du projet de Bac d'I.S.N.">
+	<!-- Auteurs de la page web. -->
+	<meta name = "author" content = "Romain Baron">
+	<meta name = "author" content = "Hugo Toulouse">
+	<meta name = "author" content = "Korantin Varnière">
+	<!-- Titre de la page. -->
+	<title>Galactic Conflict - BARON Romain + TOULOUSE Hugo + VARNIERE Korantin</title>
+	<!-- Lien avec les styles. -->
+	<link rel = "stylesheet" href = "stylesheets/layout.css">
+	<!-- Lien avec les fonts de Google. -->
+	<link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div id = "container">
+		<header id = "header">
+			<h1>Galactic Conflict</h1>
+		</header>
+
+		<div id = "instructions">
+			<h2>Personnalisation de la partie :</h2>
+
+			<div id = "player1-setting">
+				<p>Paramètres du joueur 1 :</p>
+
+				<input type = "text" id = "pseudoJ1" name = "pseudo_change" value = "Joueur 1"><button onclick = "changePseudo()">Changer de pseudo</button>
+
+				<FORM NAME="color1">
+					<SELECT NAME="Liste" onChange="changeColor()">
+						<OPTION VALUE="">Choisir une couleur</OPTION>
+						<OPTION VALUE="red">Rouge</OPTION>
+						<OPTION VALUE="yellow">Jaune</OPTION>
+						<OPTION VALUE="blue">Bleu</OPTION>
+						<OPTION VALUE="green">Vert</OPTION>
+						<OPTION VALUE="deeppink">Rose</OPTION>
+						<OPTION VALUE="brown">Marron</OPTION>
+						<OPTION VALUE="orange">Orange</OPTION>
+						<OPTION VALUE="white">Blanc</OPTION>
+						<OPTION VALUE="aqua">Cyan</OPTION>
+					</SELECT>
+				</FORM>
+			</div>
+			
+			<div id = "player2-setting">
+				<p>Paramètres du joueur 2 :</p>
+
+				<input type = "text" id = "pseudoJ2" name = "pseudo_change" value = "Joueur 2"><button onclick = "changePseudo()">Changer de pseudo</button>
+
+				<FORM NAME="color2">
+					<SELECT NAME="Liste" onChange="changeColor()">
+						<OPTION VALUE="">Choisir une couleur</OPTION>
+						<OPTION VALUE="red">Rouge</OPTION>
+						<OPTION VALUE="yellow">Jaune</OPTION>
+						<OPTION VALUE="blue">Bleu</OPTION>
+						<OPTION VALUE="green">Vert</OPTION>
+						<OPTION VALUE="deeppink">Rose</OPTION>
+						<OPTION VALUE="brown">Marron</OPTION>
+						<OPTION VALUE="orange">Orange</OPTION>
+						<OPTION VALUE="white">Blanc</OPTION>
+						<OPTION VALUE="aqua">Cyan</OPTION>
+					</SELECT>
+				</FORM>
+			</div>			
+
+			<h3>Le premier joueur à détruire l'ensemble des vaisseaux adverses a gagné.</h3>
+		</div>
+
+		<div id = "left">
+			<canvas id = "board" width="640" height="640"></canvas>
+		</div>
+
+		<div id = "right">
+			<div id = "console">
+				
+			</div>
+
+			<div id = "vaisseaux">
+				
+			</div>
+
+			<button name = "Restart" onclick = "resetGame()">Restart</button>
+			<button name = "Valider" onclick = "changeGamePhase()">Valider</button>
+			<button name = "Rotation" onclick = "placeHorizVert()">Rotation</button>
+		</div>
+	</div>
+
+	<!-- Lien avec les scripts. -->
+	<script src = "scripts/main.js"></script>
+</body>
+</html>

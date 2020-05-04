@@ -1,0 +1,130 @@
+#container
+{
+	display: inline-block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: auto;
+
+	text-align: center;
+	font-family: 'Oswald', sans-serif;
+
+	background-color: #ABABAB;
+}
+
+h1
+{
+	font-size: 46px;
+	color: white;
+}
+
+h2
+{
+	font-size: 30px;
+}
+
+h3
+{
+	font-size: 25px;
+	text-decoration: underline;
+}
+
+header
+{
+	background-color: black;
+	border-bottom: 5px solid white;
+	border-top: 2px solid black;
+}
+
+#left
+{
+	float: left;
+	width: 60%;
+}
+
+#right
+{
+	margin-left: 60%;
+	margin-top: 15%;
+}
+
+#instructions
+{
+	display: block;
+	width: auto;
+	font-size: 20px;
+}
+
+#board
+{
+	display: block;
+	margin: auto;
+	margin-top: 100px;
+	margin-bottom: 50px;
+	border: 2px solid red;
+}
+
+button
+{
+	margin-top: 50px;
+	margin-right: 25px;
+	margin-left: 25px;
+	margin-bottom: 50px;
+	background-color: black;
+	font-size: 18px;
+	border-radius: 10px;
+	font-family: 'Oswald', sans-serif;
+	border: 1px solid black;
+	transition-duration: 0.4s;
+	color: white;
+}
+
+button:hover
+{
+	background-color: black;
+	color: #D0E3E7;
+	border: 1px solid white;
+	border-radius: 8px;
+}
+
+#help
+{
+	font-style: italic;
+}
+
+#vaisseaux
+{
+	height: 320px;
+	width: 320px;
+	border: 2px solid white;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 25px;
+	background-color: black;
+}
+
+#console
+{
+	height: 20px;
+	width: 80%;
+	border: 2px solid black;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 25px;
+	background-color: white;
+	text-align: justify;
+	line-height: 12px;
+	padding: 10px;
+}
+
+form
+{
+	margin: none;
+	display: inline-block;
+}
+
+p
+{
+	margin: none;
+}
